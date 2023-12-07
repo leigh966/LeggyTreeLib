@@ -39,7 +39,7 @@ namespace LeggyTreeLib
             _parent = parent;
         }
 
-        public void AddChild(T child)
+        virtual public void AddChild(T child)
         {
             _children.Add(new TreeNode<T>(child, this));
         }
@@ -75,5 +75,6 @@ namespace LeggyTreeLib
         {
             return _children.Remove(child);
         }
+
     }
 }
