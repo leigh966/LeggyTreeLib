@@ -13,5 +13,6 @@ namespace LeggyTreeLib
         public T Value { get; }
         public void AddChild(T child);
         public bool RemoveChild(ITreeNode<T> child);
+        public T[] ToArray();
     }
 }
