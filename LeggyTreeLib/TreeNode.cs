@@ -1,11 +1,19 @@
 ﻿using System.Collections;
+using System.Net.Http.Headers;
 
 namespace LeggyTreeLib
 {
     public class TreeNode<T> : ITreeNode<T>
     {
         protected List<ITreeNode<T>> _children;
-        public ITreeNode<T>[] Children => throw new NotImplementedException();
+        public ITreeNode<T>[] Children 
+        {
+            get
+            {
+                return _children.ToArray();
+            }
+        }
+
         protected ITreeNode<T> _parent;
         public ITreeNode<T>? Parent => throw new NotImplementedException();
         protected T _value;
@@ -24,7 +32,7 @@ namespace LeggyTreeLib
 
         public void AddChild(T child)
         {
-            throw new NotImplementedException();
+            _children.Add(new TreeNode<T>(child));
         }
 
         public IEnumerator<T> GetEnumerator()
