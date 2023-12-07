@@ -39,5 +39,19 @@ namespace TestLeggyTreeLib
             tree.Insert(4);
             Assert.AreEqual(4, tree.root.Right.Left.Value);
         }
+        [TestMethod]
+        public void TestFindsAddedElements()
+        {
+            BinaryTree tree = new BinaryTree();
+            Random rnd = new Random();
+            for (int i = 0; i < 100; i++) 
+            {
+                int numberToAdd = rnd.Next(1, 100);
+                tree.Insert(numberToAdd);
+                Assert.IsTrue(tree.Contains(numberToAdd));
+            }
+            Assert.IsFalse(tree.Contains(0));
+            Assert.IsFalse(tree.Contains(101));
+        }
     }
 }
