@@ -17,7 +17,10 @@ namespace LeggyTreeLib
         protected ITreeNode<T> _parent;
         public ITreeNode<T>? Parent => throw new NotImplementedException();
         protected T _value;
-        public T Value => throw new NotImplementedException();
+        public T Value
+        {
+            get { return _value; }
+        }
 
         public TreeNode(T value)
         {
