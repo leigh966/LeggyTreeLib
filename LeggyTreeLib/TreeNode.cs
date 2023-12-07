@@ -50,12 +50,12 @@ namespace LeggyTreeLib
             {
                 return new T[1]{ this.Value };
             }
-            var output = new T[0];
+            T[] output = new T[0];
             foreach (var child in _children)
             {
-                output.Concat(child.ToArray());
+                output = output.Concat(child.ToArray()).ToArray();
             }
-            return output.ToArray();
+            return output;
         }
 
         public IEnumerator<T> GetEnumerator()
