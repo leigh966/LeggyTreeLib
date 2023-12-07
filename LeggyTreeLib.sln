@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeggyTreeLib", "LeggyTreeLib\LeggyTreeLib.csproj", "{EFBF4CD2-5934-4F2F-8B38-CF87996C387A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLeggyTreeLib", "TestLeggyTreeLib\TestLeggyTreeLib.csproj", "{F4290004-5718-400C-B039-92E531541F1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EFBF4CD2-5934-4F2F-8B38-CF87996C387A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFBF4CD2-5934-4F2F-8B38-CF87996C387A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFBF4CD2-5934-4F2F-8B38-CF87996C387A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4290004-5718-400C-B039-92E531541F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4290004-5718-400C-B039-92E531541F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4290004-5718-400C-B039-92E531541F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4290004-5718-400C-B039-92E531541F1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
