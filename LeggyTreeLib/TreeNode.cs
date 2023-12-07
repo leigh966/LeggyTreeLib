@@ -15,7 +15,13 @@ namespace LeggyTreeLib
         }
 
         protected ITreeNode<T> _parent;
-        public ITreeNode<T>? Parent => throw new NotImplementedException();
+        public ITreeNode<T>? Parent
+        {
+            get
+            {
+                return _parent;
+            }
+        }
         protected T _value;
         public T Value
         {
@@ -35,7 +41,7 @@ namespace LeggyTreeLib
 
         public void AddChild(T child)
         {
-            _children.Add(new TreeNode<T>(child));
+            _children.Add(new TreeNode<T>(child, this));
         }
 
         public IEnumerator<T> GetEnumerator()
