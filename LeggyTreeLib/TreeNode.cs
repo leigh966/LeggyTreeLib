@@ -5,7 +5,7 @@ namespace LeggyTreeLib
 {
     public class TreeNode<T> : ITreeNode<T>
     {
-        protected List<ITreeNode<T>> _children;
+        protected List<ITreeNode<T>> _children = new List<ITreeNode<T>>();
         public ITreeNode<T>[] Children 
         {
             get
