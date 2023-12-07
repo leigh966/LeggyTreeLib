@@ -9,7 +9,7 @@ namespace LeggyTreeLib
 {
     public class BinaryTree
     {
-        private BinaryNode? root = null;
+        public BinaryNode? root = null;
 
         public bool Contains(int value)
         {
