@@ -5,7 +5,7 @@ namespace LeggyTreeLib
     public class TreeNode<T> : ITreeNode<T>
     {
         protected List<ITreeNode<T>> _children;
-        public List<ITreeNode<T>> Children => throw new NotImplementedException();
+        public ITreeNode<T>[] Children => throw new NotImplementedException();
         public ITreeNode<T>? Parent => throw new NotImplementedException();
 
         public T Value => throw new NotImplementedException();
