@@ -17,7 +17,7 @@ namespace LeggyTreeLib
             {
                 return false;
             }
-            return root.CanFind(value)!=null;
+            return root.CanFind(value);
         }
 
         public void Insert(int value)
