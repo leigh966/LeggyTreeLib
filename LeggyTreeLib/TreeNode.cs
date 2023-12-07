@@ -53,5 +53,10 @@ namespace LeggyTreeLib
         {
             throw new NotImplementedException();
         }
+
+        public bool RemoveChild(ITreeNode<T> child)
+        {
+            return _children.Remove(child);
+        }
     }
 }

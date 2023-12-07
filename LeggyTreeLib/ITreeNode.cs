@@ -12,6 +12,6 @@ namespace LeggyTreeLib
         public ITreeNode<T>? Parent { get; }
         public T Value { get; }
         public void AddChild(T child);
-
+        public bool RemoveChild(ITreeNode<T> child);
     }
 }
