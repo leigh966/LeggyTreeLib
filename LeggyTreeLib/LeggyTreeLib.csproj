@@ -8,6 +8,7 @@
     <PackageTags>leggy;tree;lib;library</PackageTags>
     <PackageReleaseNotes>First Release</PackageReleaseNotes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
