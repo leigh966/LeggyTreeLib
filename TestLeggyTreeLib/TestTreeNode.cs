@@ -40,7 +40,7 @@ namespace TestLeggyTreeLib
             var child1 = parent.Children[0];
             child1.AddChild(3);
             child1.AddChild(0);
-            Assert.AreEqual(3, parent.ToArray().Length);
+            Assert.AreEqual(5, parent.ToArray().Length);
         }
 
         [TestMethod]
