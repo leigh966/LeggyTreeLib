@@ -46,11 +46,7 @@ namespace LeggyTreeLib
 
         public T[] ToArray()
         {
-            if (_children.Count == 0)
-            {
-                return new T[1]{ this.Value };
-            }
-            T[] output = new T[0];
+            T[] output = [Value];
             foreach (var child in _children)
             {
                 output = output.Concat(child.ToArray()).ToArray();
