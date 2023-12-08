@@ -76,5 +76,16 @@ namespace LeggyTreeLib
             return _children.Remove(child);
         }
 
+        public ITreeNode<T>[] ToNodeArray()
+        {
+            ITreeNode<T>[] array = [this];
+            foreach (ITreeNode<T> child in _children)
+            {
+                array = array.Concat(child.ToNodeArray()).ToArray();
+            }
+
+            return array;
+        }
+
     }
 }

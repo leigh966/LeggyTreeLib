@@ -42,5 +42,17 @@ namespace TestLeggyTreeLib
             child1.AddChild(0);
             Assert.AreEqual(3, parent.ToArray().Length);
         }
+
+        [TestMethod]
+        public void TestToNodeArray()
+        {
+            ITreeNode<int> parent = new TreeNode<int>(0);
+            parent.AddChild(1);
+            parent.AddChild(2);
+            var child1 = parent.Children[0];
+            child1.AddChild(3);
+            child1.AddChild(0);
+            Assert.AreEqual(5, parent.ToNodeArray().Length);
+        }
     }
 }
